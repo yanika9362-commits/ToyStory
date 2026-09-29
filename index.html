@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>💕 Special Day</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Mali:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="1">
+
+<!-- PAGE 1 -->
+<section class="page active" data-page="1">
+  <div class="stage">
+    <div class="bgwrap"><img class="bg" src="assets/page1.png" alt=""><div class="fx" data-fx="1"></div></div>
+    <button id="startBtn" class="pill red" style="left:30%;top:81.5%;width:40%;height:8%">START</button>
+  </div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page" data-page="2">
+  <div class="stage">
+    <!-- scene: background-layer + animation-layer + interaction-layer share one moving wrapper, so click areas never drift -->
+    <div class="bgwrap"><img class="bg" src="assets/page2.png" alt=""><div class="fx" data-fx="2"></div>
+    <button id="woody" class="hit" style="left:3.9%;top:35.7%;width:43.7%;height:28.7%" aria-label="Woody"></button>
+    <button id="jessie" class="hit" style="left:53.6%;top:35.7%;width:43.7%;height:28.7%" aria-label="Jessie"></button>
+    </div>
+  </div>
+  <div id="toast" class="toast">ดู Woody ก่อนนะ 💕</div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page" data-page="3">
+  <div class="stage">
+    <img class="bg" src="assets/page3.png" alt="">
+    <!-- text box sits inside the paper (below "To you..." and above the flowers) -->
+    <div id="letter" class="letter" style="left:21%;top:65.3%;width:58.6%;height:13.4%"></div>
+    <button id="completeBtn" class="pill green" style="left:39%;top:92.6%;width:22%;height:4.6%">COMPLETE</button>
+  </div>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page" data-page="4">
+  <div class="stage">
+    <img class="bg" src="assets/page4.png" alt="">
+    <!-- white screen: left 23.9%, top 39.2%, width 52.6%, height 27.4% -->
+    <div id="proposal" class="proposal" style="left:23.9%;top:40.5%;width:52.6%;height:14%"></div>
+    <div id="yesno" class="yesno" style="left:23.9%;top:56.5%;width:52.6%;height:7.5%">
+      <button id="yesBtn" class="pill pink" style="left:8%;width:38%">YES</button>
+      <button id="noBtn" class="pill gray" style="left:54%;width:38%">NO</button>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 5 -->
+<section class="page" data-page="5">
+  <div id="hearts" class="hearts"></div>
+  <div class="celebrate">
+    <div class="deco">💕 ✨ 💗 ✨ 💕</div>
+    <div class="photo">
+      <img id="couple" src="assets/couple.jpg" alt="">
+      <div id="ph" class="ph">📷<br>ใส่รูปคู่ที่<br>assets/couple.jpg</div>
+    </div>
+    <div class="card" id="msg5"></div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
